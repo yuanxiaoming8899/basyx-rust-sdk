@@ -1,54 +1,44 @@
-<!--
-SPDX-FileCopyrightText: 2021 Fraunhofer Institute for Experimental Software Engineering IESE
-
-SPDX-License-Identifier: MIT
--->
-
-# BaSyx Rust SDK
-
-[![Crates.io](https://img.shields.io/crates/l/basyx-rs.svg)](https://crates.io/crates/basyx-rs)
-[![Crates.io](https://img.shields.io/crates/v/basyx-rs.svg)](https://crates.io/crates/basyx-rs)
-[![Documentation](https://docs.rs/basyx-rs/badge.svg)](https://docs.rs/basyx-rs)
-[![Minimum Stable Rust Version](https://img.shields.io/badge/Rust-1.54.0%2B-blue?color=fc8d62&logo=rust)](https://rustup.rs/)
-[![ClearlyDefined Score](https://img.shields.io/clearlydefined/score/crate/cratesio/-/basyx-rs/0.1.0?label=ClearlyDefined%20Score)](https://clearlydefined.io/definitions/crate/cratesio/-/basyx-rs/0.1.0)
-[![REUSE status](https://api.reuse.software/badge/github.com/eclipse-basyx/basyx-rust-sdk)](https://api.reuse.software/info/github.com/eclipse-basyx/basyx-rust-sdk)
-[![Dependency Status](https://deps.rs/repo/github/eclipse-basyx/basyx-rust-sdk/status.svg)](https://deps.rs/repo/github/eclipse-basyx/basyx-rust-sdk)
-[![Build Status](https://img.shields.io/github/workflow/status/eclipse-basyx/basyx-rust-sdk/Run%20CI/main)](https://github.com)
-[![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/rust-secure-code/safety-dance/)
-
-A Rust library to work with Asset Administration Shells (AAS).
-
-This library supports version 3.0 of the ["Details of the Asset Administration Shell"](https://industrialdigitaltwin.org/wp-content/uploads/2023/04/IDTA-01001-3-0_SpecificationAssetAdministrationShell_Part1_Metamodel.pdf). At the moment, only JSON (de-)serialization is supported.
-
-The Eclipse BaSyx project provides a [wiki](https://wiki.eclipse.org/BaSyx).
-
-For install information, see [this page](https://wiki.eclipse.org/BaSyx_/_Download).
-There are introductory examples provided [here](https://wiki.eclipse.org/BaSyx_/_Introductory_Examples).
-Additionally, the API is described [here](https://wiki.eclipse.org/BaSyx_/_Documentation_/_API).
-If you would like to contribute, the overall process is described [here](https://wiki.eclipse.org/BaSyx_/_Developer_/_Contributing).
-
-## Checking JSON Files
-
-Installing this crate with `cargo install --path .` provides access to the `aascheck` binary utility:
-
-```bash
-aascheck --mode Submodel <INPUT>
-```
-
-or for a complete AAS environment:
-
-```bash
-aascheck --mode AAS <INPUT>
-```
-
-## Funding Acknowledgment
-
-Eclipse BaSyx was started in 2017 for the implementation of the results
-of the project "BaSys 4.0", funded by the German Federal Ministry
-of Education and Research (BMBF), grant number 01IS16022.
-
-## Declared Project Licenses
-
-This program and the accompanying materials are made available under the terms of the MIT License.
-
-SPDX-License-Identifier: MIT
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text">
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BaSyx Rust SDK</font></font></h1><a id="user-content-basyx-rust-sdk" class="anchor" aria-label="永久链接：BaSyx Rust SDK" href="#basyx-rust-sdk"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://crates.io/crates/basyx-rs" rel="nofollow"><img src="https://camo.githubusercontent.com/9cd5ef7f0635de3100b8350e94abf3a0539c69ef090ff4a5a631da378a366f86/68747470733a2f2f696d672e736869656c64732e696f2f6372617465732f6c2f62617379782d72732e737667" alt="Crates.io" data-canonical-src="https://img.shields.io/crates/l/basyx-rs.svg" style="max-width: 100%;"></a>
+<a href="https://crates.io/crates/basyx-rs" rel="nofollow"><img src="https://camo.githubusercontent.com/034c8ab153c4ea8b661386a12ade0f45299d38aace28e51c0495463f5e80687d/68747470733a2f2f696d672e736869656c64732e696f2f6372617465732f762f62617379782d72732e737667" alt="Crates.io" data-canonical-src="https://img.shields.io/crates/v/basyx-rs.svg" style="max-width: 100%;"></a>
+<a href="https://docs.rs/basyx-rs" rel="nofollow"><img src="https://camo.githubusercontent.com/fc396a5cf8965f98b58b077e4e4e16d4e9899d071193a5d56a91bfb50235fcb9/68747470733a2f2f646f63732e72732f62617379782d72732f62616467652e737667" alt="文档" data-canonical-src="https://docs.rs/basyx-rs/badge.svg" style="max-width: 100%;"></a>
+<a href="https://rustup.rs/" rel="nofollow"><img src="https://camo.githubusercontent.com/a89cd11d2578f728ca873cecd2b4ec49d0f5f6b7afb5b71c35ece8f741fd316b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f527573742d312e35342e302532422d626c75653f636f6c6f723d666338643632266c6f676f3d72757374" alt="最低稳定 Rust 版本" data-canonical-src="https://img.shields.io/badge/Rust-1.54.0%2B-blue?color=fc8d62&amp;logo=rust" style="max-width: 100%;"></a>
+<a href="https://clearlydefined.io/definitions/crate/cratesio/-/basyx-rs/0.1.0" rel="nofollow"><img src="https://camo.githubusercontent.com/3865a8378a582aa411e7c2c1c70990916bf8b72740b961e62c249453a07afcdb/68747470733a2f2f696d672e736869656c64732e696f2f636c6561726c79646566696e65642f73636f72652f63726174652f637261746573696f2f2d2f62617379782d72732f302e312e303f6c6162656c3d436c6561726c79446566696e656425323053636f7265" alt="明确的分数" data-canonical-src="https://img.shields.io/clearlydefined/score/crate/cratesio/-/basyx-rs/0.1.0?label=ClearlyDefined%20Score" style="max-width: 100%;"></a>
+<a href="https://api.reuse.software/info/github.com/eclipse-basyx/basyx-rust-sdk" rel="nofollow"><img src="https://camo.githubusercontent.com/baa757b855b32d7e606e7af5a352d34b1a52afdd4f026abae1fc232adbc0cb56/68747470733a2f2f6170692e72657573652e736f6674776172652f62616467652f6769746875622e636f6d2f65636c697073652d62617379782f62617379782d727573742d73646b" alt="重用状态" data-canonical-src="https://api.reuse.software/badge/github.com/eclipse-basyx/basyx-rust-sdk" style="max-width: 100%;"></a>
+<a href="https://deps.rs/repo/github/eclipse-basyx/basyx-rust-sdk" rel="nofollow"><img src="https://camo.githubusercontent.com/6256e0551601880a25fd8f34f87e8f7872bbed957af7c19b5b2b54ad2036d7b9/68747470733a2f2f646570732e72732f7265706f2f6769746875622f65636c697073652d62617379782f62617379782d727573742d73646b2f7374617475732e737667" alt="依赖状态" data-canonical-src="https://deps.rs/repo/github/eclipse-basyx/basyx-rust-sdk/status.svg" style="max-width: 100%;"></a>
+<a href="https://github.com"><img src="https://camo.githubusercontent.com/823ecfee1b2fba36425a8b279500e82f42a977228c576219d8ac0b0604d209f1/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f776f726b666c6f772f7374617475732f65636c697073652d62617379782f62617379782d727573742d73646b2f52756e25323043492f6d61696e" alt="构建状态" data-canonical-src="https://img.shields.io/github/workflow/status/eclipse-basyx/basyx-rust-sdk/Run%20CI/main" style="max-width: 100%;"></a>
+<a href="https://github.com/rust-secure-code/safety-dance/"><img src="https://camo.githubusercontent.com/4cae2784e68f964e197a4f5792390949288d7335430e3b4da3d0adb0a197bafb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f756e736166652d666f7262696464656e2d737563636573732e737667" alt="不安全禁止" data-canonical-src="https://img.shields.io/badge/unsafe-forbidden-success.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与资产管理外壳 (AAS) 配合使用的 Rust 库。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://industrialdigitaltwin.org/wp-content/uploads/2023/04/IDTA-01001-3-0_SpecificationAssetAdministrationShell_Part1_Metamodel.pdf" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该库支持“资产管理外壳详细信息”</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 3.0 版</font><font style="vertical-align: inherit;">。目前，仅支持 JSON（反）序列化。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eclipse BaSyx 项目提供了一个</font></font><a href="https://wiki.eclipse.org/BaSyx" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">wiki</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关安装信息，请参阅</font></font><a href="https://wiki.eclipse.org/BaSyx_/_Download" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此页</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://wiki.eclipse.org/BaSyx_/_Introductory_Examples" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这里</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提供了介绍性示例</font><font style="vertical-align: inherit;">。此外，</font></font><a href="https://wiki.eclipse.org/BaSyx_/_Documentation_/_API" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述了 API </font><font style="vertical-align: inherit;">。如果您想做出贡献，</font></font><a href="https://wiki.eclipse.org/BaSyx_/_Developer_/_Contributing" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这里</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述了整个过程。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检查 JSON 文件</font></font></h2><a id="user-content-checking-json-files" class="anchor" aria-label="固定链接：检查 JSON 文件" href="#checking-json-files"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装此包可</font></font><code>cargo install --path .</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提供对二进制实用程序的访问</font></font><code>aascheck</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>aascheck --mode Submodel <span class="pl-k">&lt;</span>INPUT<span class="pl-k">&gt;</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="aascheck --mode Submodel <INPUT>" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者对于完整的 AAS 环境：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>aascheck --mode AAS <span class="pl-k">&lt;</span>INPUT<span class="pl-k">&gt;</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="aascheck --mode AAS <INPUT>" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资助确认</font></font></h2><a id="user-content-funding-acknowledgment" class="anchor" aria-label="永久链接：资金确认" href="#funding-acknowledgment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eclipse BaSyx 于 2017 年启动，用于实施“BaSys 4.0”项目的成果，该项目由德国联邦教育和研究部 (BMBF) 资助，拨款号 01IS16022。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">已申报的项目许可证</font></font></h2><a id="user-content-declared-project-licenses" class="anchor" aria-label="永久链接：声明的项目许可证" href="#declared-project-licenses"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该程序和随附材料根据 MIT 许可证条款提供。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SPDX 许可证标识符：MIT</font></font></p>
+</article></div>
